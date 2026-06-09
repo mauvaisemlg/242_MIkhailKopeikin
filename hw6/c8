@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "Enter your name: "
+read name || echo
+
+if [ -z "$name" ]; then
+    echo "Hello, tmpuser?"
+else
+    echo "Hello, $name!"
+fi
